@@ -1,6 +1,3 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Josefin+Sans&family=Montserrat:wght@200&family=Quicksand:wght@500&display=swap');
-</style>
 
 *{
     margin: 0;
@@ -52,6 +49,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-right: 40px;
+    margin-top: 100px;
 
 }
 .hed-font-1{
@@ -113,7 +111,7 @@ header{
 .first-section-1{
     width: 1140px;
     height: 136px;
-    background-color:  #fef9f9;
+    background-color:  #fffbfb;
     gap: 10px;
     padding-left: 30px;
     margin-left: 60px;
@@ -128,6 +126,184 @@ header{
         height:30px;
         gap: 30px;
 }
+/* popur section style */
+
+.tex-popular{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 28px;    
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    max-height: 132px;'
+    padding-top: 110px;
+    
+    
+}
+
+.all-popular-style{
+    
+    display: grid;
+    max-width: 1300px;
+    grid-template-areas: ;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:#ffebeb;
+    gap: 10px;
+    margin-top: 50px;
+
+}
+.popur-span{
+    color: var(--Text-Gray-900, #18191F);
+    font-feature-settings: 'liga' off;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 10px 30px ;
+}
+.popur-numbars{
+    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0px 30px ;
+}
+.fa-solid{
+    height: 10px;
+    size: 10px;
+    
+
+}
+.popur-icon {
+    padding-left: 30px;
+}
+.popur-background{
+    color: #787885;
+}
+.popur-text-1{
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 1500px;
+    line-height: 143%; 
+    letter-spacing: 0.252px;
+    margin: 0px 30px ;
+}
+.popur-background{
+    background-color:rgb(255, 255, 255) ;
+    max-width: 260px;
+    max-height: 390px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    margin-left: 80px;
+}
+.popur-background img{
+    min-height: 200px;
+    max-width: 200px;
+    margin: 10px 30px ;
+}
+/* Featured products at one place */
+.feature-firat{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+
+}
+.feature-2{
+    margin-right: 100px;
+
+}
+.feature-3{
+    color: #0A0826;
+
+
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+.feature-4{
+    color: #6C6C6C;
+    width: 501px;
+    height: 88px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px; 
+}
+.feature-5{
+   background-color:  #E02C6D;
+   min-height: 30px;
+   max-width: 200px;
+   display: flex;
+   text-align: center;
+}
+.feature-5 p{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    margin-top: 4px;
+
+}
+.fuater-img-1{
+    margin-left: 100px;
+    
+}
+/* <!-- footer style start  --> */
+.footer-hed{
+    min-width: 1300px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+}
+.footer-hed-1{
+    color: white;
+    text-align: center;
+    margin: 100px 500px;
+}
+.footer-1{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    
+}
+.footer-2{
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px; 
+}
+.footer-3{
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-4{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 26px;
+    margin-top: 10px;
+}
+
+
+
 
 
 
@@ -139,9 +315,31 @@ header{
   /* mobile devices */
 @media screen and (max-width:567px) {
     .nav-style-all,
-    .header-font
+    .header-font,
+    .all-popular-style,
+    .first-section-1,
+    .feature-firat,
+    .footer-hed,
+    .just-phone
     {
         flex-direction: column;
+        
+    }
+    .all-popular-styl{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .just-phone{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .footer-hed, .footer-hed-1{
+        text-align: left;
+        display: flex;
     }
     
 }
